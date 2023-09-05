@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Spellsbee Animation Extension",
+    "version": "1.0",
+    "description": "Add animation to keys-button hex on Spellsbee website when matching key is pressed.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://spellsbee.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+            "16": "favicon-16x16.png",
+            "32": "favicon-32x32.png",
+            "48": "android-chrome-192x192.png",
+            "128": "android-chrome-192x192.png"
+        }
+}
